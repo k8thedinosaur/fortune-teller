@@ -1,3 +1,7 @@
+var redColor = 0;
+var blueColor = 0;
+var yellowColor = 0;
+
 $(document).ready(function() {
   $("form#ingredients-form").submit(function(event) {
     event.preventDefault();
@@ -7,9 +11,19 @@ $(document).ready(function() {
     });
 
     $("input:checkbox[class=red]:checked").each(function() {
-      var redIngredients = $(this).val();
-      console.log(redIngredients);
-    })
-
+      redColor += 1;
+    });
+    
+    $("input:checkbox[class=blue]:checked").each(function() {
+      blueColor += 1;
+    });
+    
+    $("input:checkbox[class=yellow]:checked").each(function() {
+      yellowColor += 1;
+    });
+      
+    console.log("Red: " + redColor);
+    console.log("Blue: " + blueColor);
+    console.log("Yellow: " + yellowColor);
   })
 });
