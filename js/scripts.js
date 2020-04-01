@@ -6,5 +6,10 @@ $(document).ready(function() {
       $("#ingredient-choices").append(ingredients + "<br>");
     });
 
+    $("input:checkbox[class=red]:checked").each(function() {
+      var redIngredients = $(this).val();
+      console.log(redIngredients);
+    })
+
   })
 });
