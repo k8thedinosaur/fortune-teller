@@ -1,12 +1,13 @@
 var redColor = 0;
 var blueColor = 0;
 var yellowColor = 0;
+var ingredients = [];
 
 $(document).ready(function() {
   $("form#ingredients-form").submit(function(event) {
     event.preventDefault();
     $("input:checkbox[name=ingredients]:checked").each(function() {
-      var ingredients = $(this).val();
+      ingredients = $(this).val();
       $("#ingredient-choices").append(ingredients + "<br>");
     });
 
@@ -25,5 +26,6 @@ $(document).ready(function() {
     console.log("Red: " + redColor);
     console.log("Blue: " + blueColor);
     console.log("Yellow: " + yellowColor);
-  })
+    console.log(ingredients);
+  });
 });
