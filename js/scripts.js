@@ -23,6 +23,13 @@ $(document).ready(function() {
       yellowColor += 1;
     });
       
+    if (redColor + blueColor > yellowColor || redColor === bluecolor && redColor > yellowColor || redColor === bluecolor && blueColor > yellowColor){
+      $("#purple-potion").show();
+    } else if (redColor + yellowColor > blueColor) {
+      $("#orange-potion").show();
+    } else if (yellowColor + blueColor > redColor)
+
+
     console.log("Red: " + redColor);
     console.log("Blue: " + blueColor);
     console.log("Yellow: " + yellowColor);
