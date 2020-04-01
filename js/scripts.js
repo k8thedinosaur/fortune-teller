@@ -22,6 +22,8 @@ $(document).ready(function() {
     $("input:checkbox[class=yellow]:checked").each(function() {
       yellowColor += 1;
     });
+
+    $("#choices").show();
       
     if (redColor == blueColor == yellowColor) {
       $("#brown-potion").show();

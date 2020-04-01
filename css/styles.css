@@ -1,3 +1,14 @@
+body {
+  background-color: rgb(23, 1, 41);
+  color: rgb(171, 243, 112)
+}
+
+.container {
+  border: solid 4px rgb(71, 7, 122);
+  background-color: rgb(65, 11, 109);
+  margin-top: 10vh;
+}
+
 .red {
   background-color: rgb(255, 123, 123);
 }
@@ -10,6 +21,16 @@
   background-color: rgb(255, 235, 123);
 }
 
+#choices {
+  display: none;
+  margin: 5vh 0;
+}
+
 #purple-potion, #orange-potion, #green-potion, #brown-potion {
   display: none;
+}
+
+.button {
+  color: rgb(171, 243, 112);
+  background-color: rgb(23, 1, 41);
 }
