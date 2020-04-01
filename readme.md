@@ -8,6 +8,7 @@
 
 A page written in HTML, using CSS/Bootstrap styling and JavaScript/jQuery functionality, to allow the user to assess their luck via a fortune-telling quiz.
 
+
 ## Setup/Installation Requirements
 
 * Fork repo
