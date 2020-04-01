@@ -23,11 +23,15 @@ $(document).ready(function() {
       yellowColor += 1;
     });
       
-    if (redColor + blueColor > yellowColor || redColor === bluecolor && redColor > yellowColor || redColor === bluecolor && blueColor > yellowColor){
+    if (redColor == blueColor == yellowColor) {
+      $("#brown-potion").show();
+    } else if (redColor + blueColor > yellowColor) {
       $("#purple-potion").show();
     } else if (redColor + yellowColor > blueColor) {
       $("#orange-potion").show();
-    } else if (yellowColor + blueColor > redColor)
+    } else if (yellowColor + blueColor > redColor) {
+      $("#green-potion").show();
+    };
 
 
     console.log("Red: " + redColor);
