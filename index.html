@@ -7,7 +7,7 @@ Include at least 3 possible results. -->
 
 <!-- Better idea:
 You enter a witch's potion shop and she asks you to select which ingredients will go into the brew.
-Each item has a color property (some may have more than one)
+Each item has a primary color property (some may have more than one)
 As each is checked, color properties aggregate in js
 Resulting potion/fortune is combination of two highest color properties (as in red+blue=purple)
 Purple potion = mysterious (neutral)
@@ -25,6 +25,18 @@ equal number of all three = brown potion (nothing happens/try again) -->
     <title></title>
   </head>
   <body>
+    <div class="container">
+      <form id="ingredients-form">
+        <div class="form-group">
+          <p>Choose which ingredients to add to your potion:</p>
+          <input type="checkbox" name="ingredients" value="dragon-scales"> Dragon Scales<br>
+          <input type="checkbox" name="ingredients" value="glacial-ice"> Glacial Ice<br>
+          <input type="checkbox" name="ingredients" value="honeycomb"> Honeycomb<br>
+          
+        </div>
+        <button type="submit">Bubble, bubble!</button>
+      </form>
+    </div>
     
   </body>
 </html>
